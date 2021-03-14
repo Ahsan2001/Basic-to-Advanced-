@@ -86,30 +86,36 @@
 /*-------------------------------Question # 5 Start------------------------------  */
 
 
-var grade = document.getElementsByTagName("input")
+//Write a program to take input the marks obtained in three subjects 
+var math = Number(prompt("Enter Math Marks"));
+var physics = Number(prompt("Enter Physics Marks"));
+var chemistry = Number(prompt("Enter Chemistry Marks"));
+// total marks
+var totalMark = 300;
+
+//Compute & show the resulting percentage on your page
+var obtainedMark = Number(math+physics+chemistry);
+var percentage = obtainedMark/totalMark*100; 
+//Show the total marks, marks obtained, percentage, grade & remarks
+document.write("<h1>Mark Sheet</h1>");
+document.write( "Total Mark" +"  "+totalMark +"</br>"); 
+document.write( "Obtained Mark" +"  "+obtainedMark  +"</br>");
+document.write( "Percentage" +"  "+percentage +"%" +"</br>" );
 
 
 
-switch (grade)
-{
-case 'A+':
-  console.log("Marks >= 90");
-  break;
-case 'A':
-  console.log("Marks [ >= 80 and <90 ]");
-  break;
-case 'B+':
-  console.log("Marks [ >= 70 and <80 ]");
-  break;
-case 'B':
-  console.log("Marks [ >= 60 and <70 ]");
-  break;
-case 'C':
-  console.log("Marks < 60");
-  break;
-default:
-  console.log("Wrong grade.........");
-}
+
+
+
+
+
+
+
+
+
+
+
+
 /*-------------------------------Question # 5 End------------------------------  */
 
 
